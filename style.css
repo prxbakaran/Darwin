@@ -99,72 +99,31 @@ letter-spacing:2px;
 }
 
 .nav-links{
-
 display:flex;
-
+align-items:center;
 gap:40px;
-
 list-style:none;
+}
 
+.nav-links li{
+list-style:none;
 }
 
 .nav-links a{
-
+text-decoration:none;
 color:white;
-
 font-weight:500;
-
-position:relative;
-
 }
 
-.nav-links a::after{
+@media (max-width:768px){
 
-content:"";
-
-position:absolute;
-
-bottom:-6px;
-
-left:0;
-
-height:2px;
-
-width:0;
-
-background:#FFD54F;
-
-transition:.35s;
-
-}
-
-.nav-links a:hover::after{
-
-width:100%;
-
+.nav-links{
+display:none !important;
 }
 
 .apply-btn{
-
-padding:14px 30px;
-
-border-radius:40px;
-
-background:#FFD54F;
-
-color:#222;
-
-font-weight:700;
-
-transition:.3s;
-
+display:none !important;
 }
-
-.apply-btn:hover{
-
-transform:translateY(-4px);
-
-box-shadow:0 10px 30px rgba(0,0,0,.25);
 
 }
 
